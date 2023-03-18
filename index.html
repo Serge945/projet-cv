@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+<header>
+    <ul class="navbar">
+        <li><a href="#info">Info</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#svis">Avis</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-burger"><i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+    <!-- section 1 goes here -->
+<section class="container">
+     <div class="box-1">
+         <div class="box-img">
+             <img src="images/uchiha-4.jpeg" alt="uchiha itachi" class ="img-uchi" width="300">
+         </div>
+
+            <div class ="box-origin">
+                
+                <div class="box-name">
+                   <h3> Uchiha Itachi</h3>
+                    <h3>Paris </h3>
+                    <h3> 23 ans </h3>
+                   <h3> Konoha </h3>
+                </div>
+                <div class="box-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+               </div>
+            </div>
+     </div>
+     <div class="box-presentation-1">
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Nesciunt nostrum deserunt doloremque molestiae sapiente necessitatibus pariatur eum, 
+            aperiam sint quibusdam! Dolore neque harum accusantium est soluta ratione repellendus nemo ullam?
+        </h4>
+    </div>
+ </section>
+
+        
+    <section id="info" class="container-2">
+       
+
+        <div class="box-presentation-2">
+            <img src="images/kunai-1.jpeg.png"alt="kunai" width="200">
+            <h2 id="name-job">ASSASSIN POUR LA WNS</h2>
+            <img src="images/kunai-2.jpeg.png"alt="kunai" width="200">
+        </div>
+
+        <div class ="bandeau-konoha">
+            <img src="images/headband-4.jpeg">
+        </div>
+</section>
+<script>
+         const menuBurger = document.querySelector(".fa-solid.fa-bars");
+const navBar = document.querySelector(".navbar");
+menuBurger.addEventListener('click', () => {
+  if (navBar.style.display === 'none') {
+    navBar.style.display = "block";
+  } else {
+    navBar.style.display = "none";
+  }
+
+});
+
+navBar.addEventListener('click', function() { this.style.display = 'none' })
+
+         </script>
+    
+
+</head>
+<body>
+    
+</body>
+</html>

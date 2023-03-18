@@ -1,0 +1,289 @@
+*{
+    padding:0; 
+    margin:0; 
+    box-sizing:border-box ; 
+    font-family: 'Quicksand', sans-serif;
+    list-style:none ; 
+    text-decoration : none ; 
+    scroll-behavior : smooth ; 
+
+}
+:root{
+--bg-color : #020312;
+    --text-color : #fff;
+    --main-color : #eb4a4a;
+    --second-color : gray ; 
+    --other-color : #12141c;
+}
+body{
+    background-color:var(--bg-color);
+}
+ header{
+    right:0; 
+    top:0; 
+    width:100%;
+    z-index:1000; 
+  position : fixed ; 
+  display:flex; 
+  align-items: center ;
+  justify-content :space-between;
+  background: transparent ; 
+  border-bottom:1px solid transparent;
+  transition : all .40 ease ; 
+  margin-top : 10px;
+} 
+
+.menu-burger{
+  display:none ; 
+}
+
+.navbar{
+  display:flex;
+  justify-content : space-around ; 
+}
+.navbar a {
+  
+  color : white ; 
+  font-size : 'kanit';
+  font-weight :600;
+  padding:10px 22px ; 
+  margin : 50px 0px ;
+  border-radius : 0.5rem;
+    transition : all .40 ease;
+    transform:scale(1.1);
+
+}
+.navbar a:hover {
+  background:rgb(33, 2, 2);
+  color :white; 
+}
+
+
+.container{
+  background-color:rgb(128, 70, 70);
+  width: 100%;
+  height: 550px;
+  /* background: rgba(0, 0, 0, 1); */
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow:hidden;
+  
+}
+.box-1{
+    display:flex;
+    margin: 20px;
+    margin-top:50px;
+}
+  
+  .box-img img {
+    padding: 10px;
+    background-color:transparent;
+    border-radius:100px;
+    background:rgb(128, 70, 70);
+    /* background-position */
+    background-repeat : no-repeat; 
+    background-size:cover ; 
+    margin-top:20px;
+    height:287px; 
+    width:487px
+
+   }
+
+  .box-origin  {
+    margin-left: 600px; 
+    display:flex;
+    justify-content : space-around;
+    align-items: center;
+    margin-left:50px;
+    background-image:url(images/NarutoScrollMaquettedesktop.png);
+    background-size:cover;
+    background-position :center ; 
+    background-repeat:no-repeat;
+    margin-top:15px;
+      width:900px;
+      height: 300px; 
+    /* height: 140px;
+    width: 156%;
+    margin-left: -16px; */
+  } */
+  .box-name h3{
+    padding: 10px;
+  }
+  /* .box-social a {
+    color:red;
+    width:10%;
+  } */
+  .box-social a {
+  width : 37px ; 
+  height : 37px ; 
+  border-radius : 50%;
+  display : inline-flex; 
+  align-items:center ; 
+  justify-content: center;
+  font-size:17px ; 
+  color :red;
+  cursor : pointer ; 
+  margin-right :20px;
+  background-color : rgba(225, 225, 225, 0.1);
+  margin-bottom:35px; 
+  }
+  .box-social a:hover{
+    transform:scale(1.7);
+    background:black;
+    transition : 0.4s;
+  }
+  .box-social h3{
+    padding: 10px;
+  }
+  .box-presentation-1{
+    width : 40%; 
+    padding: 20px;
+    background-color:red;
+    margin-top :30px ;
+    margin-left:450px;
+    border-radius:20px;
+    position: absolute ;
+  }
+  .container-2{
+    background:url(images/off-white.jpeg.jpg);
+    background-size:cover ;
+    background-position:center ; 
+    background-repeat: no-repeat;
+    /* background-repeat:no-repeat; */
+    height:630px;
+    overflow:hidden;
+    width : 100%;
+    position: relative ; 
+  }
+  
+  .box-presentation-2{
+    display:flex;
+    justify-content:space-between;
+    margin-top:100px;
+    align-items:center ; 
+    margin-top:250px;
+
+  }
+  #name-job{
+    font-weight:600;
+    font-style:'kanit' ;
+    color:white;
+    padding:30px;
+    background-color:rgb(186, 66, 66);
+    border-radius:20px;
+    
+  }
+  .bandeau-konoha img {
+    margin-left:450px;
+    margin-top:100px;
+    width:40%;
+    height:auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media screen and (max-width:375px) {
+    .navbar {
+      position : absolute ; 
+      display:flex;
+      flex-direction : column ;
+      background-color:rgba(205, 199, 199, 0.441) ; 
+      backdrop-filter :blur(2px);
+     width:100%;
+     height:100vh;
+      justify-content : center ; 
+      align-items:center ; 
+      margin-top:600px; 
+    }  
+
+   .navbar li{
+      margin:25px 0;
+      font-size:1.2em;
+    }
+  
+   .menu-burger{
+      display : block;
+      margin-left: 350px;
+      
+    }
+    .fa-solid .fa-bars{
+    position :fixed;
+      color:white;
+    }
+
+   .navbar .menu-hamburger{
+      width:30px;
+    }
+
+.box-1{
+    display:flex;
+    flex-direction : column ; 
+    margin : 25px; 
+ }
+     .box-img{
+      width:100%;
+      background-size:cover ;
+      margin:-26px; 
+      }
+   .box-img img {
+      background-size:cover ; 
+      margin-top:2px;
+      border-radius:0px;
+      height: 373px;
+      /* width:100%; */
+      padding: 0px;
+      overflow:hidden;
+      width:
+   }
+   .box-origin{
+        height: 202px;
+      width: 175%;
+       margin-left:-45px;
+       margin-top :-4px
+     }
+   /* .box-origin{
+     height: 161px;
+     width:159%;
+     margin-left:-16px;
+} */
+.box-name h3{
+    padding: 0px;
+     margin-left:56px;
+    margin-right:-135px;
+    }
+
+      .box-social {
+    margin: 75px;
+    padding: 52px;
+      }
+     .box-social a  {
+  padding-top: 26px;
+     }
+     .box-presentation-2 img{
+  width:110px;
+    }
+        .box-presentation-2 #name-job{
+               padding:7px;
+        }
+        
+
+
+}
